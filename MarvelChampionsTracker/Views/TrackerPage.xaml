@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MarvelChampionsTracker.Views.TrackerPage"
+    xmlns:controls="clr-namespace:MarvelChampionsTracker.Views.Controls">
+    <ContentPage.Content>
+        <!--<StackLayout Padding="20">
+            <Grid> 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <controls:CardView Grid.Row="0" Grid.Column="0" CardValue="14"/>
+            </Grid>
+            <BoxView Background="gray" HeightRequest="5"></BoxView>
+            <Grid> 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <controls:CardView Grid.Row="0" Grid.Column="0" CardValue="14"/>
+                <controls:CardView Grid.Row="0" Grid.Column="1" CardValue="14"/>
+            </Grid>
+        </StackLayout>-->
+         <StackLayout Padding="20">
+             <StackLayout Orientation="Horizontal">
+                 <ScrollView Orientation="Horizontal">
+                    <StackLayout Padding="10" Orientation="Horizontal">
+                        <controls:CardView  CardValue="14"/>
+                        <controls:CardView  CardValue="14"/>
+                     </StackLayout>
+                 </ScrollView>
+                 <StackLayout HorizontalOptions="EndAndExpand">
+                    <Button BackgroundColor="Green" Padding="10" TextColor="White" FontFamily="FAS" Text="Minion plus-circle" />
+                    <Button BackgroundColor="Green" Padding="10" TextColor="White" FontFamily="FAS" Text="Scheme plus-circle" />
+                 </StackLayout>
+             </StackLayout>
+            <BoxView Background="gray" HeightRequest="5"></BoxView>
+                <StackLayout Orientation="Horizontal">
+                    <ScrollView Orientation="Horizontal">
+                    <StackLayout Padding="10" Orientation="Horizontal">
+                        <controls:CardView  CardValue="14"/>
+                        <controls:CardView  CardValue="14"/>
+                        </StackLayout>
+                    </ScrollView>
+                    <StackLayout HorizontalOptions="EndAndExpand">
+                    <Button BackgroundColor="Green" Padding="10" TextColor="White" FontFamily="FAS" Text="Ally plus-circle" />
+                    <Button BackgroundColor="Green" Padding="10" TextColor="White" FontFamily="FAS" Text="Support plus-circle" />
+                    </StackLayout>
+             </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -13,5 +13,40 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Plugin.DeviceOrientation" Version="1.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Models\" />
+    <None Remove="Services\" />
+    <None Remove="Infraestructure\" />
+    <None Remove="Converters\" />
+    <None Remove="Behaviors\" />
+    <None Remove="Models\Enums\" />
+    <None Remove="Views\Controls\" />
+    <None Remove="Plugin.DeviceOrientation" />
+    <None Remove="Xam.Plugin.Iconize.FontAwesome" />
+    <None Remove="Assets\" />
+    <None Remove="Assets\Font Awesome 5 Brands-Regular-400.otf" />
+    <None Remove="Assets\Font Awesome 5 Free-Regular-400.otf" />
+    <None Remove="Assets\Font Awesome 5 Free-Solid-900.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Infraestructure\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Models\Enums\" />
+    <Folder Include="Views\Controls\" />
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Font Awesome 5 Brands-Regular-400.otf" />
+    <EmbeddedResource Include="Assets\Font Awesome 5 Free-Regular-400.otf" />
+    <EmbeddedResource Include="Assets\Font Awesome 5 Free-Solid-900.otf" />
   </ItemGroup>
 </Project>

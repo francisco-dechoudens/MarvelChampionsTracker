@@ -1,4 +1,5 @@
 ﻿using System;
+using MarvelChampionsTracker.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,7 @@ namespace MarvelChampionsTracker
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new TrackerPage();
         }
 
         protected override void OnStart()
